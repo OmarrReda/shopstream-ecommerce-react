@@ -1,16 +1,115 @@
-# React + Vite
+# ShopStream — E-Commerce Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ShopStream is a React-based e-commerce web application built to practice modern front-end development. It provides a shopping experience with product browsing, search and filtering, a shopping cart, user authentication, and an admin dashboard.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Product Browsing:** Browse products and view detailed product information.
+- **Search and Filtering:** Search products and filter by category, brand, and price.
+- **Pagination:** Navigate through products in manageable pages.
+- **Shopping Cart:** Add products to the cart, manage quantities, and view the total amount.
+- **User Authentication:** Login and registration flows.
+- **Checkout Flow:** Navigate through the checkout process and order success page.
+- **User Profile:** Access the user profile area.
+- **Admin Dashboard:** Dedicated pages for inventory, orders, and customer management.
+- **Dark and Light Themes:** Switch between application themes.
+- **Responsive UI:** Built with React Bootstrap for responsive layouts.
+- **Notifications:** Display feedback using toast notifications.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** — Component-based user interface
+- **Vite** — Development server and build tool
+- **JavaScript (ES6+)**
+- **React Router** — Client-side routing
+- **Redux Toolkit** — Global state management
+- **React Bootstrap** — UI components and styling
+- **Axios** — HTTP requests
+- **React Hot Toast** — Notifications
+- **DummyJSON API** — Product data and API-based functionality
+- **ESLint** — Code quality and linting
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+Make sure you have Node.js and npm installed.
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone YOUR_REPOSITORY_URL
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd shopstream-ecommerce-react
+   ```
+
+3. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open the local URL displayed in your terminal.
+
+## Available Scripts
+
+| Command           | Description                   |
+| ----------------- | ----------------------------- |
+| `npm run dev`     | Starts the development server |
+| `npm run build`   | Creates a production build    |
+| `npm run preview` | Previews the production build |
+| `npm run lint`    | Runs ESLint checks            |
+
+## Project Structure
+
+```text
+shopstream-ecommerce-react/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   └── store/
+│   │       ├── slices/
+│   │       └── store.js
+│   ├── pages/
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+└── vite.config.js
+```
+
+## API
+
+ShopStream uses [DummyJSON](https://dummyjson.com/) to retrieve product data and support selected API-based functionality.
+
+## Purpose
+
+This project was developed as a learning project to strengthen practical skills in React, component design, routing, state management, API integration, and building a multi-page web application.
+
+## Future Improvements
+
+- Improve authentication and authorization with a dedicated backend.
+- Connect the application to a persistent database.
+- Implement production-ready order processing and payment integration.
+- Add automated tests and improve error handling.
+
+---
+
+**ShopStream** — A modern shopping experience built with React.
